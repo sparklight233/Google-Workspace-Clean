@@ -383,10 +383,11 @@ async function getAccessToken() {
   return tokenData.access_token
 }
 
-/**
- * 敏感信息在此示例中直接写死
- * 建议在生产环境使用 Workers Secrets 或环境变量管理
+/**  
+ * 敏感信息在此示例中直接写死  
+ * 建议在生产环境使用 Workers Secrets 或环境变量管理  
+ * 
+ * const GOOGLE_CLIENT_ID = 'your-client-id.apps.googleusercontent.com' 
+ * const GOOGLE_CLIENT_SECRET = 'your-client-secret' 
+ * const GOOGLE_REFRESH_TOKEN = 'your-refresh-token' 
  */
-const GOOGLE_CLIENT_ID = 'your-client-id.apps.googleusercontent.com'
-const GOOGLE_CLIENT_SECRET = 'your-client-secret'
-const GOOGLE_REFRESH_TOKEN = 'your-refresh-token'
